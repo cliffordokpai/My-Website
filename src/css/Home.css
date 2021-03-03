@@ -1,0 +1,13 @@
+h1 {
+  color: dodgerblue;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 3rem;
+}
+
+.Home-Page__Wrapper {
+  margin: 25vh auto 0;
+}
+
+body {
+  background: radial-gradient(#d3d8a7, #64ac76, #413670);
+}
