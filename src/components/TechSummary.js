@@ -1,14 +1,10 @@
 import React from 'react';
 
-// const style = {
-//   width: '60%',
-// };
-
 function TechSummary() {
   return (
     <div className='ui container'>
       <div>
-        <h2>
+        <h2 style={{ marginTop: '5%' }}>
           Here are some of the technologies I've had the chance to work with or
           want to learn.
         </h2>

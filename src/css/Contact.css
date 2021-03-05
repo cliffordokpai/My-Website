@@ -1,32 +1,27 @@
-/* .Contact-Page__Wrapper {
-  background-color: blanchedalmond;
-  justify-content: center;
-  display: flex;
-  height: 100vh;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  height: 50vh;
-} */
-
-@media (min-height: 320px) {
-  .ui.footer.form-page {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
+.Contact-Page__Wrapper {
+  margin: 10vh auto 0;
+  height: 80vh;
 }
 
 .ui.form .inline.fields .wide.field > input {
-  background-color: transparent;
+  background-color: mintcream;
 }
 
 .ui.form textarea:not([rows]) {
-  background-color: transparent;
+  background-color: mintcream;
 }
 
 .ui.form {
-  border: 2px solid white;
+  max-width: 50% !important;
+  margin: 15vh auto 0;
+}
+
+@media screen and (max-width: 425px) {
+  .ui.form {
+    max-width: 90% !important;
+  }
+}
+
+.ui.form .five.wide.field {
+  width: 100% !important;
 }

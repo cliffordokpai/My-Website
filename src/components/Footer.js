@@ -2,9 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const style = {
+    position: 'fixed',
+    bottom: 0,
+    width: '100%',
+    backgroundColor: 'rgb(78, 80, 80)',
+    left: 0,
+    padding: '4px',
+  };
+
   return (
-    <div>
-      <div className='ui inverted footer segment form-page'>
+    <div style={style}>
+      <div>
         <Link target='_blank' to='//ca.linkedin.com/in/clifford-okpai-33375984'>
           <button class='ui linkedin button'>
             <i class='linkedin icon'></i>
@@ -17,7 +26,6 @@ export default function Footer() {
             Git Hub
           </button>
         </Link>
-        <p>cliffordokpai. All rights reserved</p>
       </div>
     </div>
   );

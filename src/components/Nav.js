@@ -6,15 +6,17 @@ function Nav() {
   const navStyle = {
     color: 'white',
     textDecoration: 'none',
+    margin: '2px',
   };
 
   return (
     <nav>
-      <h3>
-        <i class='laptop icon'></i>
-        <i class='keyboard icon'></i>
-      </h3>
       <ul className='nav-links'>
+        <Link style={navStyle} to='/'>
+          <li>
+            <i class='large laptop icon'></i>
+          </li>
+        </Link>
         <Link style={navStyle} to='/'>
           <li>
             <i class='large home icon'></i>
@@ -27,7 +29,7 @@ function Nav() {
           <li>Contact</li>
         </Link>
         <Link style={navStyle} to='/tech-summary'>
-          <li>Tech Summary</li>
+          <li>Tech-Summary</li>
         </Link>
       </ul>
     </nav>
