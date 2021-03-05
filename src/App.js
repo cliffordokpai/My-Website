@@ -6,6 +6,7 @@ import TechSummary from './components/TechSummary';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
           <Route path='/tech-summary' component={TechSummary} />
+          <Route path='/projects' component={Projects} />
         </Switch>
         <Footer />
       </div>

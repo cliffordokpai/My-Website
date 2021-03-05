@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 315px);
+  grid-gap: 5px;
+  margin: 5px;
+}
+
+.project-1,
+.project-4 {
+  background-color: seashell;
+  display: grid;
+}
+
+.center {
+  margin: auto;
+}
+
+.project-2,
+.project-3 {
+  background-color: transparent;
+  display: grid;
+}

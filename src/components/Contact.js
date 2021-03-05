@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Contact.css';
+import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
@@ -32,8 +33,14 @@ function Contact() {
         </div>
         <div>
           <button className='left floated ui button'>
-            SEND <i class='paper plane icon'></i>
+            SEND <i className='paper plane icon'></i>
           </button>
+
+          <Link to={'/projects'}>
+            <button className='left floated ui button'>
+              Click Here, to see some of my work.
+            </button>
+          </Link>
         </div>
       </div>
     </div>
