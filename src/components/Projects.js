@@ -25,9 +25,7 @@ export default function Projects() {
       </div>
       <div className='project-2'>
         <div className='center'>
-          <span className='name'>
-            <h2></h2>
-          </span>
+          <span className='name'></span>
           <button className='ui button'>Coming Soon...</button>
           <span className='about'>
             <p></p>
@@ -36,9 +34,7 @@ export default function Projects() {
       </div>
       <div className='project-3'>
         <div className='center'>
-          <span className='name'>
-            <h4></h4>
-          </span>
+          <span className='name'></span>
           <button className='ui button'>Coming Soon...</button>
           <span className='about'>
             <p></p>
