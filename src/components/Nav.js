@@ -14,19 +14,14 @@ function Nav() {
       <ul className='nav-links'>
         <Link style={navStyle} to='/'>
           <li>
-            <i class='large laptop icon'></i>
-          </li>
-        </Link>
-        <Link style={navStyle} to='/'>
-          <li>
             <i class='large home icon'></i>
           </li>
         </Link>
         <Link style={navStyle} to='/about'>
           <li>About</li>
         </Link>
-        <Link style={navStyle} to='/contact'>
-          <li>Contact</li>
+        <Link style={navStyle} to='/projects'>
+          <li>Projects</li>
         </Link>
         <Link style={navStyle} to='/tech-summary'>
           <li>Tech-Summary</li>

@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <div style={style}>
       <div>
-        <Link target='_blank' to='//ca.linkedin.com/in/clifford-okpai-33375984'>
+        <Link target='_blank' to='//ca.linkedin.com/in/cliffordokpai'>
           <button class='ui linkedin button'>
             <i class='linkedin icon'></i>
             LinkedIn
@@ -26,6 +26,12 @@ export default function Footer() {
             Git Hub
           </button>
         </Link>
+        <a href='mailto:cliffordokpai@yahoo.ca'>
+          <button class='ui email button'>
+            <i class='envelope outline icon'></i>
+            Email
+          </button>
+        </a>
       </div>
     </div>
   );
