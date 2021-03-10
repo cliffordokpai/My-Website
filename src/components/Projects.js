@@ -25,10 +25,20 @@ export default function Projects() {
       </div>
       <div className='project-2'>
         <div className='center'>
-          <span className='name'></span>
-          <button className='ui button'>Coming Soon...</button>
+          <span className='name'>
+            <h2>React + Google Sheets + AWS Amplify</h2>
+          </span>
+          <Link target='_blank' to='//master.dhg8trjobqeci.amplifyapp.com/'>
+            <div class='ui animated fade button' tabindex='0'>
+              <div class='visible content'>See Project</div>
+              <div class='hidden content'>Explore</div>
+            </div>
+          </Link>
           <span className='about'>
-            <p></p>
+            <p>
+              This App uses Google sheets as a database. Data can be added and
+              retrieved from the sheet.
+            </p>
           </span>
         </div>
       </div>

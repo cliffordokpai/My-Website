@@ -10,14 +10,14 @@ function TechSummary() {
         </h2>
       </div>
       <div className='ui teal active progress'>
-        <div className='bar' style={{ width: '75%' }}>
-          <div className='progress'>75%</div>
+        <div className='bar' style={{ width: '86%' }}>
+          <div className='progress'>86%</div>
         </div>
         <div className='label'>HTML</div>
       </div>
       <div className='ui black active progress'>
-        <div className='bar' style={{ width: '70%', color: 'white' }}>
-          <div className='progress'>70%</div>
+        <div className='bar' style={{ width: '89%', color: 'white' }}>
+          <div className='progress'>89%</div>
         </div>
         <div className='label'>CSS</div>
       </div>
@@ -57,6 +57,12 @@ function TechSummary() {
           <div className='progress'>75%</div>
         </div>
         <div className='label'>Java</div>
+      </div>
+      <div className='ui olive  active progress'>
+        <div className='bar' style={{ width: '80%' }}>
+          <div className='progress'>80%</div>
+        </div>
+        <div className='label'>SASS</div>
       </div>
     </div>
   );

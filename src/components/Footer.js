@@ -11,6 +11,11 @@ export default function Footer() {
     padding: '4px',
   };
 
+  const email={
+    backgroundColor: '#7934f7',
+    color: '#ffffff'
+  }
+
   return (
     <div style={style}>
       <div>
@@ -27,7 +32,7 @@ export default function Footer() {
           </button>
         </Link>
         <a href='mailto:cliffordokpai@yahoo.ca'>
-          <button class='ui email button'>
+          <button style={email} class='ui email button'>
             <i class='envelope outline icon'></i>
             Email
           </button>
