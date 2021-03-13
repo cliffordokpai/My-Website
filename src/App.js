@@ -10,7 +10,7 @@ import styled from 'styled-components';
 const Container = styled.body`
   text-align: center;
   background: radial-gradient(#d3d8a7, #64ac76, #413670);
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
 
   @media screen and (max-width: 458px) {

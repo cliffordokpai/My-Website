@@ -30,10 +30,10 @@ const H3 = styled.h3`
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
   justify-items: center;
   align-items: center;
-  grid-gap: 1rem;
+  grid-gap: 5px;
 
   @media screen and (max-width: 458px) {
     grid-template-rows: repeat(5, 120px);
