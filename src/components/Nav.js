@@ -1,33 +1,57 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/Nav.css';
+import styled, { keyframes } from 'styled-components';
+
+const fadeIn = keyframes`
+0%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+`;
+
+const NavBar = styled.nav`
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(78, 80, 80);
+`;
+
+const NavItem = styled.h2`
+  animation: 5s ${fadeIn} ease-in;
+  width: 100%;
+  height: 2rem;
+  color: white;
+
+  &:hover {
+    padding-top: 10px;
+    color: #64ac76;
+  }
+`;
 
 function Nav() {
-  const navStyle = {
-    color: 'white',
-    textDecoration: 'none',
-    margin: '2px',
-  };
-
   return (
-    <nav>
-      <ul className='nav-links'>
-        <Link style={navStyle} to='/'>
-          <li>
-            <i class='large home icon'></i>
-          </li>
-        </Link>
-        <Link style={navStyle} to='/about'>
-          <li>About</li>
-        </Link>
-        <Link style={navStyle} to='/projects'>
-          <li>Projects</li>
-        </Link>
-        <Link style={navStyle} to='/tech-summary'>
-          <li>Tech-Summary</li>
-        </Link>
-      </ul>
-    </nav>
+    <NavBar>
+      <Link to='/'>
+        <NavItem>
+          <i className='large home icon'></i>
+        </NavItem>
+      </Link>
+
+      <Link to='/about'>
+        <NavItem>About</NavItem>
+      </Link>
+
+      <Link to='/projects'>
+        <NavItem>Projects</NavItem>
+      </Link>
+      <Link to='/tech-summary'>
+        <NavItem>Tech-Summary</NavItem>
+      </Link>
+    </NavBar>
   );
 }
 

@@ -4,36 +4,40 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   const style = {
     position: 'fixed',
+    height: '5vh',
     bottom: 0,
     width: '100%',
     backgroundColor: 'rgb(78, 80, 80)',
     left: 0,
-    padding: '4px',
+    padding: '3px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   };
 
-  const email={
+  const email = {
     backgroundColor: '#7934f7',
-    color: '#ffffff'
-  }
+    color: '#ffffff',
+  };
 
   return (
     <div style={style}>
       <div>
         <Link target='_blank' to='//ca.linkedin.com/in/cliffordokpai'>
-          <button class='ui linkedin button'>
-            <i class='linkedin icon'></i>
+          <button className='ui linkedin button'>
+            <i className='linkedin icon'></i>
             LinkedIn
           </button>
         </Link>
         <Link target='_blank' to='//github.com/C-N-O'>
-          <button class='ui github button'>
-            <i class='github icon'></i>
+          <button className='ui github button'>
+            <i className='github icon'></i>
             Git Hub
           </button>
         </Link>
         <a href='mailto:cliffordokpai@yahoo.ca'>
-          <button style={email} class='ui email button'>
-            <i class='envelope outline icon'></i>
+          <button style={email} className='ui email button'>
+            <i className='envelope outline icon'></i>
             Email
           </button>
         </a>
