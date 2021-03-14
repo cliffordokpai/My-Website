@@ -22,13 +22,15 @@ const NavBar = styled.nav`
 
 const NavItem = styled.h2`
   animation: 5s ${fadeIn} ease-in;
-  width: 100%;
-  height: 2rem;
   color: white;
 
   &:hover {
     padding-top: 10px;
     color: #64ac76;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 16px;
   }
 `;
 
@@ -37,7 +39,7 @@ function Nav() {
     <NavBar>
       <Link to='/'>
         <NavItem>
-          <i className='large home icon'></i>
+          <i className='home icon'></i>
         </NavItem>
       </Link>
 

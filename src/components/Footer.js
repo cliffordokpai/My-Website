@@ -1,47 +1,56 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const FooterWrapper = styled.div`
+  position: fixed;
+  height: 5vh;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(78, 80, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const FooterItems = styled.button`
+  @media screen and (max-width: 333px) {
+    width: 100px;
+
+    i {
+      display: none;
+    }
+  }
+`;
 
 export default function Footer() {
-  const style = {
-    position: 'fixed',
-    height: '5vh',
-    bottom: 0,
-    width: '100%',
-    backgroundColor: 'rgb(78, 80, 80)',
-    left: 0,
-    padding: '3px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  };
-
   const email = {
     backgroundColor: '#7934f7',
     color: '#ffffff',
   };
 
   return (
-    <div style={style}>
+    <FooterWrapper>
       <div>
         <Link target='_blank' to='//ca.linkedin.com/in/cliffordokpai'>
-          <button className='ui linkedin button'>
+          <FooterItems className='ui linkedin button'>
             <i className='linkedin icon'></i>
             LinkedIn
-          </button>
+          </FooterItems>
         </Link>
         <Link target='_blank' to='//github.com/C-N-O'>
-          <button className='ui github button'>
+          <FooterItems className='ui github button'>
             <i className='github icon'></i>
             Git Hub
-          </button>
+          </FooterItems>
         </Link>
         <a href='mailto:cliffordokpai@yahoo.ca'>
-          <button style={email} className='ui email button'>
+          <FooterItems style={email} className='ui email button'>
             <i className='envelope outline icon'></i>
             Email
-          </button>
+          </FooterItems>
         </a>
       </div>
-    </div>
+    </FooterWrapper>
   );
 }

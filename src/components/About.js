@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Body = styled.body`
+const Main = styled.div`
   background: radial-gradient(#d3d8a7, #64ac76, #413670);
+  height: 100vh;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Container = styled.div`
@@ -15,22 +19,57 @@ const Container = styled.div`
 const Text = styled.p`
   font-family: 'Source Code Pro', monospace;
   font-size: 2rem;
+  text-align: center;
+  padding: 0 30px;
 
-  @media screen and (max-width: 458px) {
-    font-size: 16px;
-    text-align: justify;
-    padding: 0 12px;
+  @media screen and (max-width: 1571px) {
+    font-size: 1.8rem;
   }
 
-  @media screen and (max-width: 1536px) {
-    text-align: justify;
-    margin: 5px;
+  @media screen and (max-width: 1224px) {
+    font-size: 1.7rem;
+  }
+
+  @media screen and (max-width: 1074px) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 933px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 933px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 742px) {
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 627px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 533px) {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 448px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 379px) {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 0.7rem;
   }
 `;
 
 function About() {
   return (
-    <Body>
+    <Main>
       <Container>
         <Text>
           Hi, my name is Clifford Okpai and I am a front-end web developer.
@@ -54,7 +93,7 @@ function About() {
           looked back.
         </Text>
       </Container>
-    </Body>
+    </Main>
   );
 }
 

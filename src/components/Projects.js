@@ -2,55 +2,85 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Body = styled.body`
+const Main = styled.div`
   background: radial-gradient(#d3d8a7, #64ac76, #413670);
+  height: 85vh;
 `;
 
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, 50%);
-  grid-gap: 5px;
   height: 85vh;
 `;
 
 const CenterItem = styled.div`
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const TransparentBackground = styled.div`
   background-color: transparent;
   display: grid;
+
+  .button {
+    background-color: seashell;
+    &:hover {
+      color: white;
+      background-color: rgb(78, 80, 80);
+    }
+  }
 `;
 
 const ColoredBackground = styled.div`
   background-color: seashell;
   display: grid;
+
+  .button {
+    background-color: rgb(122, 176, 116);
+
+    &:hover {
+      color: white;
+      background-color: rgb(78, 80, 80);
+    }
+  }
+`;
+
+const Title = styled.h2`
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+`;
+
+const Text = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  text-align: center;
 `;
 
 export default function Projects() {
   return (
-    <Body>
+    <Main>
       <Container>
         <ColoredBackground>
           <CenterItem>
-            <h2>ARMAST</h2>
+            <Title>ARMAST</Title>
             <Link target='_blank' to='//cliffdev-armast.netlify.com'>
               <div className='ui animated fade button' tabindex='0'>
                 <div className='visible content'>View Project</div>
                 <div className='hidden content'>Click Now</div>
               </div>
             </Link>
-            <span className='about'>
-              <p>
-                This is a hub for Java Script Arrays, Math, and String methods.
-              </p>
-            </span>
+            <Text>
+              This is a hub for Java Script Arrays, Math, and String methods.
+            </Text>
           </CenterItem>
         </ColoredBackground>
         <TransparentBackground>
           <CenterItem>
-            <h2>React + Google Sheets + AWS Amplify</h2>
+            <Title>React + Google Sheets + AWS Amplify</Title>
 
             <Link target='_blank' to='//master.dhg8trjobqeci.amplifyapp.com/'>
               <div className='ui animated fade button' tabindex='0'>
@@ -58,12 +88,10 @@ export default function Projects() {
                 <div className='hidden content'>Explore</div>
               </div>
             </Link>
-            <span className='about'>
-              <p>
-                This App uses Google sheets as a database. Data can be added and
-                retrieved from the sheet.
-              </p>
-            </span>
+            <Text>
+              This App uses Google sheets as a database. Data can be added and
+              retrieved from the sheet.
+            </Text>
           </CenterItem>
         </TransparentBackground>
         <TransparentBackground>
@@ -74,19 +102,19 @@ export default function Projects() {
         </TransparentBackground>
         <ColoredBackground>
           <CenterItem>
-            <h2>xChanger</h2>
+            <Title>xChanger</Title>
             <Link target='_blank' to='//cliffdev-xChanger.netlify.com'>
               <div className='ui animated fade button' tabindex='0'>
                 <div className='visible content'>Take A Peek</div>
                 <div className='hidden content'>Get In</div>
               </div>
             </Link>
-            <span className='about'>
-              <p>This is a currency converter App using a third-party API.</p>
-            </span>
+            <Text>
+              This is a currency converter App using a third-party API.
+            </Text>
           </CenterItem>
         </ColoredBackground>
       </Container>
-    </Body>
+    </Main>
   );
 }
