@@ -96,8 +96,18 @@ export default function Projects() {
         </TransparentBackground>
         <TransparentBackground>
           <CenterItem>
-            <button className='ui button'>Coming Soon...</button>
-            <span className='about'></span>
+            <Title>Online Coffee Shop</Title>
+
+            <Link target='_blank' to='//cliffdev-coffeeshop.netlify.app/'>
+              <div className='ui animated fade button' tabindex='0'>
+                <div className='visible content'>Click to Enter</div>
+                <div className='hidden content'>Visit Store</div>
+              </div>
+            </Link>
+            <Text>
+              This is a online coffee store where customers can add to cart and
+              reach checkout. This is still a work in progress.
+            </Text>
           </CenterItem>
         </TransparentBackground>
         <ColoredBackground>
