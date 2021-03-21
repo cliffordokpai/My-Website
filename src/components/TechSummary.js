@@ -56,6 +56,12 @@ function TechSummary() {
             </div>
             <div className='label'>React JS</div>
           </div>
+          <div className='ui pink  active progress'>
+            <div className='bar' style={{ width: '50%' }}>
+              <div className='progress'>50%</div>
+            </div>
+            <div className='label'>Node JS</div>
+          </div>
           <div className='ui orange active progress'>
             <div className='bar' style={{ width: '65%' }}>
               <div className='progress'>65%</div>
@@ -76,8 +82,8 @@ function TechSummary() {
           </div>
 
           <div className='ui grey active progress'>
-            <div className='bar' style={{ width: '75%' }}>
-              <div className='progress'>75%</div>
+            <div className='bar' style={{ width: '60%' }}>
+              <div className='progress'>60%</div>
             </div>
             <div className='label'>Java</div>
           </div>
@@ -86,6 +92,12 @@ function TechSummary() {
               <div className='progress'>80%</div>
             </div>
             <div className='label'>SASS</div>
+          </div>
+          <div className='ui green active progress'>
+            <div className='bar' style={{ width: '50%' }}>
+              <div className='progress'>50%</div>
+            </div>
+            <div className='label'>MongoDB</div>
           </div>
         </div>
       </CenterItem>

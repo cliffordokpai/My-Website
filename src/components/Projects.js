@@ -80,17 +80,20 @@ export default function Projects() {
         </ColoredBackground>
         <TransparentBackground>
           <CenterItem>
-            <Title>React + Google Sheets + AWS Amplify</Title>
+            <Title>Cliff Blog</Title>
 
-            <Link target='_blank' to='//master.dhg8trjobqeci.amplifyapp.com/'>
+            <Link
+              target='_blank'
+              to='//ec2-15-223-46-226.ca-central-1.compute.amazonaws.com/'
+            >
               <div className='ui animated fade button' tabindex='0'>
                 <div className='visible content'>See Project</div>
                 <div className='hidden content'>Explore</div>
               </div>
             </Link>
             <Text>
-              This App uses Google sheets as a database. Data can be added and
-              retrieved from the sheet.
+              A full stack Blog website with a React front-end, NodeJS and
+              MongoDB back-end, and hosted on Amazon AWS.
             </Text>
           </CenterItem>
         </TransparentBackground>
