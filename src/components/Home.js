@@ -3,29 +3,20 @@ import styled, { keyframes } from 'styled-components';
 
 const H1zoomOut = keyframes`
 0%{
-  font-size: 10rem;
-}
-50%{
   font-size: 0rem;
-  opacity: 0;
 }
 100%{
   font-size: 5rem;
-  opacity: 1;
 }
 `;
 
 const H3zoomOut = keyframes`
 0%{
-  font-size: 5rem;
-}
-50%{
   font-size: 0rem;
-  opacity: 0;
 }
 100%{
   font-size: 3rem;
-  opacity: 1;
+
 }
 `;
 
@@ -38,7 +29,7 @@ const H1 = styled.h1`
   color: rgb(52, 109, 172);
   font-family: 'Montserrat', sans-serif;
   font-size: 5rem;
-  animation: 3s ${H1zoomOut} ease-out;
+  animation: 3s ${H1zoomOut} ease-in;
   text-align: center;
 
   @media screen and (max-width: 540px) {
@@ -55,7 +46,7 @@ const H3 = styled.h3`
   color: rgb(78, 80, 80);
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
-  animation: 5s ${H3zoomOut} ease-out;
+  animation: 3s ${H3zoomOut} ease-in;
   text-align: center;
 
   @media screen and (max-width: 540px) {
