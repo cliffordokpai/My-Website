@@ -84,7 +84,7 @@ export default function Projects() {
 
             <Link
               target='_blank'
-              to='//ec2-15-223-46-226.ca-central-1.compute.amazonaws.com/'
+              to='//ec2-15-223-46-226.ca-central-1.compute.amazonaws.com'
             >
               <div className='ui animated fade button' tabindex='0'>
                 <div className='visible content'>See Project</div>
