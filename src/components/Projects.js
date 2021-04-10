@@ -83,15 +83,15 @@ export default function Projects() {
           <CenterItem>
             <Title>Cliff Blog</Title>
 
-            <a
+            <Link
               target='_blank'
-              href='http://ec2-15-223-46-226.ca-central-1.compute.amazonaws.com/'
+              to='//ec2-15-223-46-226.ca-central-1.compute.amazonaws.com/'
             >
               <div className='ui animated fade button' tabindex='0'>
                 <div className='visible content'>See Project</div>
                 <div className='hidden content'>Explore</div>
               </div>
-            </a>
+            </Link>
             <Text>
               A full stack Blog website with a React front-end, NodeJS and
               MongoDB back-end, and hosted on Amazon AWS.
