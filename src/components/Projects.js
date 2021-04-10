@@ -5,12 +5,13 @@ import styled from 'styled-components';
 const Main = styled.div`
   background: radial-gradient(#d3d8a7, #64ac76, #413670);
   height: 85vh;
+  overflow-y: scroll;
 `;
 
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-rows: repeat(3, 50%);
   height: 85vh;
 `;
 
@@ -124,6 +125,21 @@ export default function Projects() {
             </Link>
             <Text>
               This is a currency converter App using a third-party API.
+            </Text>
+          </CenterItem>
+        </ColoredBackground>
+        <ColoredBackground>
+          <CenterItem>
+            <Title>Tip Calculator</Title>
+            <Link target='_blank' to='//cliffdev-tipcalc.netlify.app/'>
+              <div className='ui animated fade button' tabindex='0'>
+                <div className='visible content'>Click Here</div>
+                <div className='hidden content'>Explore App</div>
+              </div>
+            </Link>
+            <Text>
+              Tip Calculator is used for calculating an order total given the
+              initial amount and a tip.
             </Text>
           </CenterItem>
         </ColoredBackground>
