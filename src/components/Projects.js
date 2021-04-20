@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 const Main = styled.div`
   background: radial-gradient(#d3d8a7, #64ac76, #413670);
-  height: 85vh;
+  /* height: 120vh; */
   overflow-y: scroll;
 `;
 
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(3, 50%);
+  grid-template-rows: repeat(4, 50%);
   height: 85vh;
 `;
 
@@ -143,6 +143,38 @@ export default function Projects() {
             </Text>
           </CenterItem>
         </ColoredBackground>
+        <TransparentBackground>
+          <CenterItem>
+            <Title>sQuiz App</Title>
+            <Link target='_blank' to='//cliffdev-quizapp.netlify.app/'>
+              <div className='ui animated fade button' tabindex='0'>
+                <div className='visible content'>You Think you are smart?</div>
+                <div className='hidden content'>Take A Quiz</div>
+              </div>
+            </Link>
+            <Text>
+              This is a online quiz App built with HTML, CSS, Vanilla Javascript
+            </Text>
+          </CenterItem>
+        </TransparentBackground>
+        <TransparentBackground>
+          <CenterItem>
+            <Title>Quotes App</Title>
+            <Link target='_blank' to='//cliffdev-quotes-app.netlify.app/'>
+              <div className='ui animated fade button' tabindex='0'>
+                <div className='visible content'>
+                  Want to relax and read some quotes?
+                </div>
+                <div className='hidden content'>Check this out</div>
+              </div>
+            </Link>
+            <Text>
+              This is React App which plays quotes as a slide show. It uses
+              axios to fetch quotes from a thrid party API, Redux to manage
+              state, IdleTimer to monitor activity.
+            </Text>
+          </CenterItem>
+        </TransparentBackground>
       </Container>
     </Main>
   );
