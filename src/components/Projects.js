@@ -175,6 +175,22 @@ export default function Projects() {
             </Text>
           </CenterItem>
         </TransparentBackground>
+        <ColoredBackground>
+          <CenterItem>
+            <Title>Counter App</Title>
+            <Link target='_blank' to='//cliffdev-counterapp.netlify.app/'>
+              <div className='ui animated fade button' tabindex='0'>
+                <div className='visible content'>Want to explore this App?</div>
+                <div className='hidden content'>Just Do It</div>
+              </div>
+            </Link>
+            <Text>
+              Counter App allows you to select a plain .txt file or you can
+              simply copy and paste. It then tells you the number of words and
+              paragraphs contained in the file/text.
+            </Text>
+          </CenterItem>
+        </ColoredBackground>
       </Container>
     </Main>
   );
