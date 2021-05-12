@@ -191,13 +191,14 @@ export default function Projects() {
             </Text>
           </CenterItem>
         </ColoredBackground>
-        <TransparentBackground>
+
+        <ColoredBackground>
           <CenterItem>
             <Title>Disney Plus Clone</Title>
-            <Link target='_blank' to='//cliffdev-disney-plus-clone.web.app'>
+            <Link target='_blank' to='//cliffdev-disney-plus-clone.web.app/'>
               <div className='ui animated fade button' tabindex='0'>
                 <div className='visible content'>Are you a Star Wars fan?</div>
-                <div className='hidden content'>See Disney Plus</div>
+                <div className='hidden content'>See Disney Plus Clone</div>
               </div>
             </Link>
             <Text>
@@ -206,7 +207,7 @@ export default function Projects() {
               Sliders, and React Router Dom.
             </Text>
           </CenterItem>
-        </TransparentBackground>
+        </ColoredBackground>
       </Container>
     </Main>
   );
