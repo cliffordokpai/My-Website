@@ -11,7 +11,7 @@ const Main = styled.div`
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(4, 50%);
+  grid-template-rows: repeat(5, 50%);
   height: 85vh;
 `;
 
@@ -191,6 +191,22 @@ export default function Projects() {
             </Text>
           </CenterItem>
         </ColoredBackground>
+        <TransparentBackground>
+          <CenterItem>
+            <Title>Disney Plus Clone</Title>
+            <Link target='_blank' to='//cliffdev-disney-plus-clone.web.app'>
+              <div className='ui animated fade button' tabindex='0'>
+                <div className='visible content'>Are you a Star Wars fan?</div>
+                <div className='hidden content'>See Disney Plus</div>
+              </div>
+            </Link>
+            <Text>
+              This is a Disney Plus Clone. Tech stack includes React, Redux,
+              Styled Components, Firebase Auth and Hosting, React Slick for
+              Sliders, and React Router Dom.
+            </Text>
+          </CenterItem>
+        </TransparentBackground>
       </Container>
     </Main>
   );
